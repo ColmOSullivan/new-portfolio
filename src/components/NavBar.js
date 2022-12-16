@@ -26,3 +26,5 @@ function CustomLink({ to, children, ...props }){
         </li>
     )
 }
+
+/**Nav bar was inspired/created thanks to a Web Dev Simplified video**/ 
