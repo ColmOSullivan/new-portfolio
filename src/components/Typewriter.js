@@ -9,12 +9,12 @@ const Typewriter = () => {
             <TypeWriterEffect 
                 textStyle={{
                     fontFamily: 'Red Hat Display',
-                    color:'#FFFFFF',
+                    color:'black',
                     fontWeight: 500,
                     fontSize: '1.5em',
                 }}
                 startDelay={2000}
-                cursorColor='#FFFFFF'
+                cursorColor='black'
                 multiText={[
                     "I am a web developer",
                     "I have a dog named Jhin.",

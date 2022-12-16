@@ -6,37 +6,26 @@ import './styles/App.css';
 import { Routes, Route, Link } from 'react-router-dom'
 import React from 'react';
 // components
+import NavBar from './components/NavBar';
 import LandingPage from './components/LandingPage'
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
+      <NavBar />
       <Routes>
-        <Route path='/' element={<NavWrapper/>}>
           <Route path='/' element={<LandingPage />}/>
-          <Route path='/skills' element={<Contact/>}/>
+          <Route path='/skills' element={<Skills/>}/>
           <Route path='/projects' element={<Projects/>}/>
-          <Route path='/contact' element={<Skills/>}/>
-        </Route>
+          <Route path='/contact' element={<Contact/>}/>
       </Routes>
-    </div>
+    </main>
   );
 }
 
-function NavWrapper() {
-  return(
-    <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/skills">Projects</Link>
-        <Link to="/projects">Skills</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-    </>
-  )
-}
+
 
 export default App;

@@ -2,6 +2,7 @@
 @use "./partials/fonts";
 @use "./partials/setup";
 @use "./partials/landingPage";
+@use "./partials/navBar";
 
 /**General styling**/
 .App {
@@ -9,9 +10,7 @@
   }
 
   html{
-    background: $colorBlack;
     max-height: 100vh;
-    color: $colorWhite;
 }
 /**end General styling**/
 
