@@ -1,8 +1,11 @@
+import AnimatedPage from '../components/AnimatedPage';
 const Contact = () => {
     return(
-        <>
-        <p>this is the contact page</p>
-        </>
+        <AnimatedPage>
+            <section>
+                <p>this is the contact page</p>
+            </section>
+        </AnimatedPage>
     )
 }
 

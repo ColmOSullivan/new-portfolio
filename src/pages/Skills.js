@@ -1,6 +1,12 @@
+import AnimatedPage from '../components/AnimatedPage';
+
 const Skills = () => {
     return(
-        <p>this is the skills section</p>
+        <AnimatedPage>
+            <section>
+                <p>this is the skills section</p>
+            </section>
+        </AnimatedPage>
     )
 }
 

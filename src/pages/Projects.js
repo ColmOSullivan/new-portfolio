@@ -1,8 +1,12 @@
+import AnimatedPage from '../components/AnimatedPage';
+
 const Projects = () => {
     return(
-        <>
-            <p>this is the projects page</p>
-        </>
+        <AnimatedPage>
+            <section>
+                <p>this is the projects page</p>
+            </section>
+        </AnimatedPage>
     )
 }
 

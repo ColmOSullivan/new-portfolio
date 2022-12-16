@@ -5,13 +5,13 @@ import React from "react";
 
 const Typewriter = () => {
     return(
-        <div className="typewriter">
             <TypeWriterEffect 
                 textStyle={{
-                    fontFamily: 'Red Hat Display',
+                    fontFamily: 'inherit',
                     color:'black',
                     fontWeight: 500,
                     fontSize: '1.5em',
+                    textAlign: 'center'
                 }}
                 startDelay={2000}
                 cursorColor='black'
@@ -21,11 +21,10 @@ const Typewriter = () => {
                     "I am learning Tailwind.",
                     "I am TRAPPED IN THE CODE, PLEASE SEND HELP."
                 ]}
-                multiTextLoop={true}
+                multiTextLoop={false}
                 nextTextDelay={100}
                 typeSpeed={30}
             />
-        </div>
     )
 }
 
