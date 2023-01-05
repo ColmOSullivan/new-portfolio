@@ -331,6 +331,61 @@ template {
   background-color: #777;
 }
 
+.skills-container {
+  padding: 65px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-container .skillText {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills-container .skillList {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(6, 180px);
+}
+@media (max-width: 1200px) {
+  .skills-container .skillList {
+    grid-template-columns: repeat(4, 180px);
+  }
+}
+@media (max-width: 810px) {
+  .skills-container .skillList {
+    grid-template-columns: repeat(2, 180px);
+  }
+}
+.skills-container .skillList .skillIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.skills-container .skillList .skillIcon i {
+  padding-bottom: 20px;
+}
+.skills-container .skillList .skillIcon .skillText {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
 /**General/base styling**/
 .App {
   text-align: center;
