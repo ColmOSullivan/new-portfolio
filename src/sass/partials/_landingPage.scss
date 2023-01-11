@@ -1,11 +1,22 @@
 @use "variables" as *;
 
-.hero-container{
-    border: 1px solid black;
+.landing-container{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
-button{
-    // font-family: Ubuntu;
-    background-color:transparent;
-    border-radius: 0.2rem;
+// .hero-container{
+//     border: 1px solid black;
+// }
+
+.landing-article{
+    padding: 0 2rem;
+    p{
+    line-height: 1.9;
+    text-align: center;
+    // letter-spacing: 1.5px;
+    }
 }

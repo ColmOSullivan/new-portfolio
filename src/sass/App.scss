@@ -2,16 +2,45 @@
 @use "./partials/fonts";
 @use "./partials/setup";
 @use "./partials/landingPage";
+@use "./partials/navBar";
+@use "./partials/skills";
 
-/**General styling**/
+/**General/base styling**/
 .App {
     text-align: center;
   }
 
   html{
-    background: #D9D9D9;
     max-height: 100vh;
+    // font-size: 62.5%;
+    background: $offWhite;
 }
+main{
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  background-color: transparent;
+  // color: ;
+  padding: 10px 0;
+}
+
+
 /**end General styling**/
 
 
