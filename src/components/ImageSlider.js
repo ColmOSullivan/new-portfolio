@@ -1,5 +1,6 @@
 import SliderData from "./SliderData"
 import React, {useState} from "react";
+import {  Link } from 'react-router-dom'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 
 const ImageSlider = ({slides}) => {
@@ -28,8 +29,15 @@ const ImageSlider = ({slides}) => {
         {SliderData.map((slide, index) => {
             return(
                 <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                    {index === current && <h3 className="project-title">{slide.projectName}</h3>}
-                    {index === current && <img className="image" src={slide.image} alt = {slide.altText}/>}
+                    <div className="slide-card">
+                        {index === current && <h3 className="project-title">{slide.projectName}</h3>}
+                        {index === current && <img className="image" src={slide.image} alt = {slide.altText}/>}
+                        {index === current && <p className="project-text">{slide.projectDesc}</p>}
+                        <div className="button-container">
+                            {index === current && <button className="slider-button"><a href={slide.liveLink}>Live site</a></button>}
+                            {index === current && <button className="slider-button"><a href={slide.repoLink}>Repo site</a></button>}
+                        </div>
+                    </div>
                 </div>
                 
             )
