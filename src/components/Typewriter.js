@@ -18,7 +18,7 @@ const Typewriter = () => {
                 multiText={[
                     "I am a web developer",
                     "I have a dog named Jhin.",
-                    "I am learning Tailwind.",
+                    "I am learning WordPress.",
                     "I am TRAPPED IN THE CODE, PLEASE SEND HELP."
                 ]}
                 multiTextLoop={false}

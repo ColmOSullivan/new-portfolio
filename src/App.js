@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './styles/App.css';
 // utilities
 import { AnimatePresence } from 'framer-motion';
-import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import React from 'react';
 // components
 import NavBar from './components/NavBar';
