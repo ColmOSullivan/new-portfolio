@@ -1,9 +1,14 @@
 import AnimatedPage from '../components/AnimatedPage';
+import Typewriter from '../components/Typewriter';
+import {FaSass, FaCss3Alt, FaJsSquare} from 'react-icons/fa';
+import {ImHtmlFive} from 'react-icons/im'
+
 
 const Skills = () => {
     return(
         <AnimatedPage>
-            <section id="skills" class="skillSection">
+            <section id="skills" class="skillSection card">
+            <Typewriter/>
         <div class="skills-container wrapper flex-container">
           <div class="skillText flex-container">
             <h3>Skills</h3>
