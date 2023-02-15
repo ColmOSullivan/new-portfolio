@@ -18,15 +18,17 @@ function App() {
   return (
     <main className="App">
       <NavBar />
-      <div className='apex-container wrapper'>
-      <AnimatePresence mode='wait'>
-        <Routes key={location.pathname} location={location}>
-            <Route path='/' element={<LandingPage />}/>
-            <Route path='/skills' element={<Skills/>}/>
-            <Route path='/projects' element={<Projects/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-      </AnimatePresence>
+      <div className='apex-container'>
+        <div className="wrapper">
+        <AnimatePresence mode='wait'>
+          <Routes key={location.pathname} location={location}>
+              <Route path='/' element={<LandingPage />}/>
+              <Route path='/skills' element={<Skills/>}/>
+              <Route path='/projects' element={<Projects/>}/>
+              <Route path='/contact' element={<Contact/>}/>
+          </Routes>
+        </AnimatePresence>
+        </div>
       </div>
     </main>
   );
