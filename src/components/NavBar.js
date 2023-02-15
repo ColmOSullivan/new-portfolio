@@ -1,17 +1,21 @@
 /**Following a tutorial from Web Dev Simplified 'How to create a NavBar in React Routing'**/ 
 
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import DisplayIcon from './DisplayIcon'
 
 export default function NavBar(){
-    return <nav className="nav">
+
+    return <nav className="">
+        <div className='navBar wrapper'>
         <Link to="/" className='site-title'>
-            Colm O'Sullivan
+            <DisplayIcon />
         </Link>
         <ul>
             <CustomLink to ="/skills">Skills</CustomLink>
             <CustomLink to ="/projects">Projects</CustomLink>
             <CustomLink to ="/contact">Contact</CustomLink>
         </ul>
+        </div>
     </nav>
 }
 

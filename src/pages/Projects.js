@@ -5,7 +5,7 @@ import SliderData from '../components/SliderData';
 const Projects = () => {
     return(
         <AnimatedPage>
-            <section className='projects-section'>
+            <section className='projects-section card'>
                 <div className='carousel'>
                     <ImageSlider slides={SliderData}/>
                 </div>

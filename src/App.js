@@ -18,6 +18,7 @@ function App() {
   return (
     <main className="App">
       <NavBar />
+      <div className='apex-container wrapper'>
       <AnimatePresence mode='wait'>
         <Routes key={location.pathname} location={location}>
             <Route path='/' element={<LandingPage />}/>
@@ -26,6 +27,7 @@ function App() {
             <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </AnimatePresence>
+      </div>
     </main>
   );
 }
