@@ -21,25 +21,26 @@ const ImageSlider = ({slides}) => {
     
     return(
         <section className="slider">
-            <FaArrowAltCircleLeft aria-label="previous slide button" className="left-arrow" onClick={prevSlide}/>
-            
-        {SliderData.map((slide, index) => {
-            return(
-                <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                    <div className="slide-card">
-                        {index === current && <h3 className="project-title">{slide.projectName}</h3>}
-                        {index === current && <img className="image" src={slide.image} alt = {slide.altText}/>}
-                        {index === current && <p className="project-text">{slide.projectDesc}</p>}
-                        <div className="button-container">
-                            {index === current && <button className="slider-button"><a href={slide.liveLink}>Live site</a></button>}
-                            {index === current && <button className="slider-button"><a href={slide.repoLink}>Repo site</a></button>}
+            {SliderData.map((slide, index) => {
+                return(
+                    <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                        <div className="slide-card">
+                            {index === current && <h3 className="project-title">{slide.projectName}</h3>}
+                            {index === current && <img className="image" src={slide.image} alt = {slide.altText}/>}
+                            {/* {index === current && <p className="project-text">{slide.projectDesc}</p>} */}
+                            {/* <div className="button-container">
+                                {index === current && <button className="slider-button"><a href={slide.liveLink}>Live site</a></button>}
+                                {index === current && <button className="slider-button"><a href={slide.repoLink}>Repo site</a></button>}
+                            </div> */}
                         </div>
                     </div>
-                </div>
-                
-            )
-        })}
-        <FaArrowAltCircleRight aria-label="next slide button"className="right-arrow" onClick={nextSlide} />
+                    
+                )
+            })}
+            <div className="arrow-container">
+                <FaArrowAltCircleLeft aria-label="previous slide button" className="left-arrow" onClick={prevSlide}/>
+                <FaArrowAltCircleRight aria-label="next slide button"className="right-arrow" onClick={nextSlide} />
+            </div>
         </section>
     );
 };

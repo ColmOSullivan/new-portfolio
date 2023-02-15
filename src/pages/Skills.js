@@ -8,7 +8,7 @@ const Skills = () => {
     return(
         <AnimatedPage>
             <section id="skills" class="skillSection card">
-            <Typewriter/>
+            {/* <Typewriter/> */}
         <div class="skills-container wrapper flex-container">
           <div class="skillText flex-container">
             <h3>Skills</h3>

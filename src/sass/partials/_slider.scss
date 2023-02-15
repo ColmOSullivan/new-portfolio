@@ -8,28 +8,10 @@
     position: relative;
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .right-arrow{
-        position: absolute;
-        top: 50%;
-        right: 32px;
-        font-size: 3rem;
-        color: black;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-    }
-    .left-arrow{
-        position: absolute;
-        top: 50%;
-        left: 32px;
-        font-size: 3rem;
-        color: black;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-    }
+
     .slide{
         opacity: 0;
         transition: 1s ease;
@@ -52,7 +34,7 @@
                 padding: 1rem;
             }
             .image{
-                width: 50%;
+                width: 66%;
                 height: auto;
                 object-fit: cover;
                 border-radius: 10px;
@@ -86,5 +68,23 @@
         }
         
     }
+}
 
+.arrow-container{
+    padding: 1rem;
+    margin: 1rem;
+    .right-arrow{
+        font-size: 3rem;
+        color: black;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .left-arrow{
+        font-size: 3rem;
+        color: black;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
 }

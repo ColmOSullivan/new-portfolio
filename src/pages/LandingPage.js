@@ -1,8 +1,6 @@
 
 import AnimatedPage from '../components/AnimatedPage';
 
-// The AnimatedPage component prevents Typewriter component from working properly.
-
 const LandingPage = () => {
     return(
     
