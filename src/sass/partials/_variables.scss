@@ -5,6 +5,11 @@ $colorWhite:#FFFFFF;
 $offWhite:#f6f6f6;
 $colorGrey:#D9D9D9;
 $colorBlue:#284B63;
+// Mooby Color scheme
+$colorPurple:#432966;
+$colorYellow: #fed91f;
+$colorOrange:#fe8c4e;
+// gradients
 $gradient:(linear-gradient(45deg,#121212,#313131));
 $gradientOne:(linear-gradient(90deg, #ffcb77,#005d85));
 $gradientTwo:(linear-gradient(45deg,#121212,#313131));
@@ -23,3 +28,18 @@ $wideDesktop:"1300px";
 $desktop:"1200px";
 $tablet:"810px";
 $mobile:"420px";
+
+
+/*@media (max-width:$wideDesktop) {
+    css propertoes
+}*/ 
+/*@media (max-width:$desktop) {
+    css propertoes
+}*/ 
+/*@media (max-width:$tablet) {
+    css propertoes
+}*/ 
+/*@media (max-width:$mobile) {
+    css propertoes
+}*/ 
+

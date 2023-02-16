@@ -4,6 +4,18 @@
   display: flex;
 }
 
+/*@media (max-width:$wideDesktop) {
+    css propertoes
+}*/
+/*@media (max-width:$desktop) {
+    css propertoes
+}*/
+/*@media (max-width:$tablet) {
+    css propertoes
+}*/
+/*@media (max-width:$mobile) {
+    css propertoes
+}*/
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -271,6 +283,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
+  font-size: 1rem;
 }
 
 .landing-article {
@@ -304,6 +317,12 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.25rem;
+  font-size: 1rem;
+}
+@media (max-width: 420px) {
+  nav a {
+    font-size: 0.8rem;
+  }
 }
 nav li.active {
   background-color: #555;
@@ -333,63 +352,59 @@ nav li:hover {
 }
 
 .skills-container {
-  padding: 65px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-@media (max-width: 810px) {
-  .skills-container {
-    padding: 10px 0;
-  }
-}
-.skills-container .skillText {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.skills-container h3 {
+  font-size: 4.5rem;
 }
 .skills-container .skillList {
-  display: grid;
-  grid-column-gap: 10px;
-  grid-template-columns: repeat(6, 180px);
-}
-@media (max-width: 1200px) {
-  .skills-container .skillList {
-    grid-template-columns: repeat(4, 180px);
-  }
-}
-@media (max-width: 810px) {
-  .skills-container .skillList {
-    grid-template-columns: repeat(2, 180px);
-  }
-}
-.skills-container .skillList .skillIcon {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
-.skills-container .skillList .skillIcon i {
-  padding-bottom: 20px;
+@media (min-width: 810px) {
+  .skills-container .skillList {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
-.skills-container .skillList .skillIcon .skillText {
-  font-size: 1rem;
-  text-transform: capitalize;
+.skills-container .skillList li {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 1%;
+  margin: 1rem 0;
+}
+@media (min-width: 810px) {
+  .skills-container .skillList li {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .skills-container .skillList li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 1%;
+  }
+}
+.skills-container .skillList li i {
+  font-size: 3.5rem;
+  padding: 2%;
+}
+@media (min-width: 810px) {
+  .skills-container .skillList li i {
+    font-size: 4rem;
+  }
 }
 
 .carousel {
@@ -541,6 +556,7 @@ nav li:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   max-height: 100vh;
+  font-size: 62.5%;
   background: #D9D9D9;
   background-image: url(../assets/images/tor-skyline.jpg);
   background-size: cover;
@@ -594,6 +610,7 @@ main {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -602,7 +619,6 @@ a {
 
 i {
   background-color: transparent;
-  padding: 10px 0;
 }
 
 /**end General styling**/
