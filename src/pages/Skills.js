@@ -1,70 +1,55 @@
 import AnimatedPage from '../components/AnimatedPage';
-import Typewriter from '../components/Typewriter';
-import {FaSass, FaCss3Alt, FaJsSquare} from 'react-icons/fa';
-import {ImHtmlFive} from 'react-icons/im'
-
 
 const Skills = () => {
     return(
         <AnimatedPage>
-            <section id="skills" class="skillSection card">
-            {/* <Typewriter/> */}
-        <div class="skills-container wrapper flex-container">
-          <div class="skillText flex-container">
-            <h3>Skills</h3>
-          </div>
-          <div class="skillList">
-            <div class="skillIcon">
-              <i class="fa-brands fa-html5"></i>
-              <span class="skillText">HTML5</span>
+          <section id="skills" className="skillSection card">
+            <div className="skills-container flex-container">
+                <h3>Skills</h3>
+                <ul className='skillList'>
+                  <li>
+                    <i class="fa-brands fa-html5"></i>
+                    <p class="skillText">HTML5</p>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p class="skillText">CSS3</p>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-sass"></i>
+                    <p class="skillText">Sass</p>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-square-js"></i>
+                    <p class="skillText">JavaScript</p>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-react"></i>
+                    <p class="skillText">React</p>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-github"></i>
+                    <p class="skillText">Github</p>
+                  </li>
+                  <li>
+                    <i class="devicon-firebase-plain"></i>
+                    <p class="skillText">Firebase</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-terminal"></i>
+                    <p class="skillText">Terminal</p>
+                  </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-tower-cell"></i>
+                    <p class="skillText">Communication</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-mobile"></i>
+                    <p class="skillText">Web accessibility</p>
+                  </li>
+                </ul>
             </div>
-            <div class="skillIcon">
-              <i class="fa-brands fa-css3-alt"></i>
-              <span class="skillText">CSS3</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-brands fa-sass"></i>
-              <span class="skillText">Sass</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-brands fa-square-js"></i>
-              <span class="skillText">JavaScript</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-brands fa-react"></i>
-              <span class="skillText">React</span>
-            </div>
-            <div class="skillIcon">
-              <i class="devicon-firebase-plain"></i>
-              <span class="skillText">Firebase</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-brands fa-github"></i>
-              <span class="skillText">Github</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-solid fa-terminal"></i>
-              <span class="skillText">Terminal</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-solid fa-bug-slash"></i>
-              <span class="skillText">Debugging</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-solid fa-mobile"></i>
-              <span class="skillText">Web accessibility</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-sharp fa-solid fa-tower-cell"></i>
-              <span class="skillText">Communication</span>
-            </div>
-            <div class="skillIcon">
-              <i class="fa-solid fa-people-group"></i>
-              <span class="skillText">Paired programming</span>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
         </AnimatedPage>
     )
 }

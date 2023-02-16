@@ -17,6 +17,10 @@ nav{
         display: flex;
         align-items: center;
         padding: .25rem;
+        font-size: 1rem;
+        @media (max-width:$mobile) {
+            font-size: 0.8rem;
+        }
     }
     li.active{
         background-color: #555;

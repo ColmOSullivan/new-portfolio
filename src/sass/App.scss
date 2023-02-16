@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     max-height: 100vh;
-    // font-size: 62.5%;
+    font-size: 62.5%;
     background: $colorGrey;
     background-image: url(../assets/images/tor-skyline.jpg);
     background-size: cover;
@@ -61,6 +61,7 @@ main{
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -69,8 +70,7 @@ a {
 
 i {
   background-color: transparent;
-  // color: ;
-  padding: 10px 0;
+  // padding: 10px 0;
 }
 
 
