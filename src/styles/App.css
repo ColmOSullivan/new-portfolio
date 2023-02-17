@@ -4,16 +4,16 @@
   display: flex;
 }
 
-/*@media (max-width:$wideDesktop) {
+/*@media (min-width or max-width:$wideDesktop) {
     css propertoes
 }*/
-/*@media (max-width:$desktop) {
+/*@media (min-width or max-width:$desktop) {
     css propertoes
 }*/
-/*@media (max-width:$tablet) {
+/*@media (min-width or max-width:$tablet) {
     css propertoes
 }*/
-/*@media (max-width:$mobile) {
+/*@media (min-width or max-width:$mobile) {
     css propertoes
 }*/
 html {
@@ -408,12 +408,11 @@ nav li:hover {
 }
 
 .carousel {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 .slider {
   position: relative;
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +439,6 @@ nav li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
   opacity: 1;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -463,56 +461,67 @@ nav li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0.5rem;
 }
 .slider .slide.active .slide-card .project-title {
   padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 .slider .slide.active .slide-card .image {
-  width: 66%;
+  width: 90%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
+@media (min-width: 810px) {
+  .slider .slide.active .slide-card .image {
+    width: 66%;
+  }
+}
+@media (min-width: 1100px) {
+  .slider .slide.active .slide-card .image {
+    width: 50%;
+  }
+}
 .slider .slide.active .slide-card .project-text {
-  width: 50%;
+  width: 90%;
+  padding: 2%;
+  font-size: 1rem;
+}
+.slider .slide.active .slide-card .button-container {
+  margin: 1rem 0;
 }
 .slider .slide.active .slide-card .slider-button {
-  color: white;
+  margin: 0 1rem;
+  color: black;
+  text-shadow: none;
+  font-weight: bold;
   text-transform: capitalize;
   cursor: pointer;
-  padding: 6px 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcb77), to(#005d85));
-  background: linear-gradient(90deg, #ffcb77, #005d85);
-  background-size: 100%;
-  border: 3px double #3C6E71;
-  -webkit-box-shadow: 0 4px 0 0 #3C6E71;
-          box-shadow: 0 4px 0 0 #3C6E71;
+  padding: 6px 12px;
+  background: #fed91f;
+  border: 3px double #fe8c4e;
+  -webkit-box-shadow: 0 4px 0 0 #fe8c4e;
+          box-shadow: 0 4px 0 0 #fe8c4e;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   border-radius: 5px;
 }
 .slider .slide.active .slide-card .slider-button:hover {
-  color: #284B63;
+  background-color: #432966;
+  color: white;
+  border: 3px double #fed91f;
+  -webkit-box-shadow: 0 4px 0 0 #fed91f;
+          box-shadow: 0 4px 0 0 #fed91f;
 }
 .slider .slide.active .slide-card .slider-button:focus {
-  color: #284B63;
-}
-@-webkit-keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: 100%;
-  }
+  background-color: #432966;
+  color: white;
+  border: 3px double #fed91f;
+  -webkit-box-shadow: 0 4px 0 0 #fed91f;
+          box-shadow: 0 4px 0 0 #fed91f;
 }
 
 .arrow-container {
@@ -521,27 +530,43 @@ nav li:hover {
 }
 .arrow-container .right-arrow {
   font-size: 3rem;
-  color: black;
+  color: #fed91f;
+  border: 1px solid #fe8c4e;
+  background-color: #fe8c4e;
+  border-radius: 40px;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin: 1rem;
+}
+.arrow-container .right-arrow:hover {
+  color: #432966;
+}
+.arrow-container .right-arrow:focus {
+  color: #432966;
 }
 .arrow-container .left-arrow {
   font-size: 3rem;
-  color: black;
+  color: #fed91f;
+  border: 1px solid #fe8c4e;
+  background-color: #fe8c4e;
+  border-radius: 40px;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin: 1rem;
 }
-
-.projects-section {
-  border: 1px dotted red;
+.arrow-container .left-arrow:hover {
+  color: #432966;
+}
+.arrow-container .left-arrow:focus {
+  color: #432966;
 }
 
 /**General/base styling**/
@@ -571,7 +596,7 @@ nav li:hover {
   -webkit-backdrop-filter: blur(7px) saturate(200%);
   background-color: rgba(17, 25, 40, 0.15);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   height: 75vh;
 }
 
