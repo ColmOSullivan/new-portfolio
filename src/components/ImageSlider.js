@@ -21,6 +21,7 @@ const ImageSlider = ({slides}) => {
     
     return(
         <section className="slider">
+            <h2>Projects</h2>
             <div className="arrow-container flex-container">
                 <FaArrowAltCircleLeft aria-label="previous slide button" className="left-arrow" onClick={prevSlide}/>
                 <FaArrowAltCircleRight aria-label="next slide button"className="right-arrow" onClick={nextSlide} />

@@ -2,6 +2,7 @@ import AnimatedPage from '../components/AnimatedPage';
 import {FaLinkedin} from 'react-icons/fa';
 import {AiOutlineMail } from 'react-icons/ai'
 import Typewriter from '../components/Typewriter';
+import {FaDove} from 'react-icons/fa';
 
 
 const Contact = () => {
@@ -15,6 +16,7 @@ const Contact = () => {
                 <p>Here's how you can do those things!</p>
                 <div className="icon-container flex-container">
                     <a className='contact-icon' href="https://www.linkedin.com/in/colm-o-sullivan-9163baa6/"><FaLinkedin/></a>
+                    <a onClick={()=>{ alert('I was joking about the messenger pigeon.'); }}><FaDove/></a>
                     <a className='contact-icon' href="malito:colm.osullivan1@gmail.com"><AiOutlineMail/></a>
                 </div>
             </section>

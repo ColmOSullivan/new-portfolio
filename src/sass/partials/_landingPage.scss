@@ -4,10 +4,11 @@
 .landing-container{
     text-align: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     padding: 2rem;
     font-size: 1rem;
+    
     .hero-container{
         font-size: clamp(1rem, 7vw, 2rem);
         h1{
@@ -15,16 +16,16 @@
             font-family: $headerFont;
         }
     }
-}
-
-
-
-.landing-article{
-    padding: 0 2rem;
-    p{
-    line-height: 1.9;
-    text-align: center;
-    // letter-spacing: 1.5px;
+    .landing-article{
+        p{
+        padding: 5px 0;
+        text-align: left;
+        font-size: 1rem;
+        }
     }
 }
+
+
+
+
 
