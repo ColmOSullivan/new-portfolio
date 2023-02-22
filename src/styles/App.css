@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&family=Zen+Dots&display=swap");
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +286,13 @@ template {
   padding: 2rem;
   font-size: 1rem;
 }
+.landing-container .hero-container {
+  font-size: clamp(1rem, 7vw, 2rem);
+}
+.landing-container .hero-container h1 {
+  margin: 1rem auto;
+  font-family: "Raleway";
+}
 
 .landing-article {
   padding: 0 2rem;
@@ -359,6 +367,7 @@ nav li:hover {
 }
 .skills-container h3 {
   font-size: 4.5rem;
+  font-family: "Raleway";
 }
 .skills-container .skillList {
   width: 100%;
@@ -409,6 +418,11 @@ nav li:hover {
 
 .carousel {
   margin-top: 2.5rem;
+}
+@media (min-width: 600px) {
+  .carousel {
+    margin-top: 0;
+  }
 }
 
 .slider {
@@ -464,6 +478,7 @@ nav li:hover {
   margin: 0 0.5rem;
 }
 .slider .slide.active .slide-card .project-title {
+  font-family: "Raleway";
   padding: 1rem;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -475,12 +490,12 @@ nav li:hover {
      object-fit: cover;
   border-radius: 10px;
 }
-@media (min-width: 810px) {
+@media (min-width: 600px) {
   .slider .slide.active .slide-card .image {
     width: 66%;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 800px) {
   .slider .slide.active .slide-card .image {
     width: 50%;
   }
@@ -495,33 +510,27 @@ nav li:hover {
 }
 .slider .slide.active .slide-card .slider-button {
   margin: 0 1rem;
-  color: black;
+  color: #353535;
   text-shadow: none;
   font-weight: bold;
   text-transform: capitalize;
   cursor: pointer;
   padding: 6px 12px;
-  background: #fed91f;
-  border: 3px double #fe8c4e;
-  -webkit-box-shadow: 0 4px 0 0 #fe8c4e;
-          box-shadow: 0 4px 0 0 #fe8c4e;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  background: #FFFFFF;
+  border: 3px double #353535;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   border-radius: 5px;
 }
 .slider .slide.active .slide-card .slider-button:hover {
-  background-color: #432966;
-  color: white;
-  border: 3px double #fed91f;
-  -webkit-box-shadow: 0 4px 0 0 #fed91f;
-          box-shadow: 0 4px 0 0 #fed91f;
+  background-color: #fed91f;
+  color: #005d85;
+  border: 3px double #005d85;
 }
 .slider .slide.active .slide-card .slider-button:focus {
-  background-color: #432966;
-  color: white;
-  border: 3px double #fed91f;
-  -webkit-box-shadow: 0 4px 0 0 #fed91f;
-          box-shadow: 0 4px 0 0 #fed91f;
+  background-color: #fed91f;
+  color: #005d85;
+  border: 3px double #005d85;
 }
 
 .arrow-container {
@@ -530,10 +539,6 @@ nav li:hover {
 }
 .arrow-container .right-arrow {
   font-size: 3rem;
-  color: #fed91f;
-  border: 1px solid #fe8c4e;
-  background-color: #fe8c4e;
-  border-radius: 40px;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -541,19 +546,17 @@ nav li:hover {
       -ms-user-select: none;
           user-select: none;
   margin: 1rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .arrow-container .right-arrow:hover {
-  color: #432966;
+  color: #fed91f;
 }
 .arrow-container .right-arrow:focus {
-  color: #432966;
+  color: #fed91f;
 }
 .arrow-container .left-arrow {
   font-size: 3rem;
-  color: #fed91f;
-  border: 1px solid #fe8c4e;
-  background-color: #fe8c4e;
-  border-radius: 40px;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -561,12 +564,54 @@ nav li:hover {
       -ms-user-select: none;
           user-select: none;
   margin: 1rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .arrow-container .left-arrow:hover {
-  color: #432966;
+  color: #fed91f;
 }
 .arrow-container .left-arrow:focus {
-  color: #432966;
+  color: #fed91f;
+}
+
+.contact-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-family: "Raleway";
+}
+.contact-section p {
+  font-size: 1rem;
+}
+.contact-section .icon-container {
+  margin: 1rem 0;
+  width: 33%;
+  font-size: 2rem;
+  padding: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-section .icon-container .contact-icon {
+  color: white;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.contact-section .icon-container .contact-icon:hover {
+  color: #fed91f;
+}
+.contact-section .icon-container .contact-icon:focus {
+  color: #fed91f;
 }
 
 /**General/base styling**/

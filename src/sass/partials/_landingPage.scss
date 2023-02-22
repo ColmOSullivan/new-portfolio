@@ -8,6 +8,13 @@
     align-items: center;
     padding: 2rem;
     font-size: 1rem;
+    .hero-container{
+        font-size: clamp(1rem, 7vw, 2rem);
+        h1{
+            margin: 1rem auto;
+            font-family: $headerFont;
+        }
+    }
 }
 
 
@@ -20,3 +27,4 @@
     // letter-spacing: 1.5px;
     }
 }
+
