@@ -8,7 +8,7 @@ const Typewriter = () => {
             <TypeWriterEffect 
                 textStyle={{
                     fontFamily: 'inherit',
-                    color:'black',
+                    color:'white',
                     fontWeight: 500,
                     fontSize: '1.5em',
                     textAlign: 'center'
@@ -21,7 +21,7 @@ const Typewriter = () => {
                     "I am learning WordPress.",
                     "I am TRAPPED IN THE CODE, PLEASE SEND HELP."
                 ]}
-                multiTextLoop={false}
+                multiTextLoop={true}
                 nextTextDelay={100}
                 typeSpeed={30}
             />

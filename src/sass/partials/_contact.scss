@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.contact-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 2.5rem;
+        font-family: $headerFont;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .icon-container{
+        margin: 1rem 0;
+        width: 33%;
+        font-size: 2rem;
+        padding: 10px 0;
+        justify-content: space-between;
+        // @media (min-width:$tablet) {
+        //     width: 25%;
+        // }
+        .contact-icon{
+            color: white;
+            transition: all 200ms ease-in-out;
+        &:hover{
+            color: $colorYellow;
+            }
+            &:focus{
+                color:$colorYellow;
+            }
+        }
+    }
+}
